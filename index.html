@@ -1,13 +1,96 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oniria | Galería de Arte Surrealista</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cuadro subrealistas</h1>
+
+  <header class="navbar">
+    <div class="logo">ONIRIA</div>
+    <nav>
+      <a href="#obras">Obras</a>
+      <a href="#manifiesto">Manifiesto</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Donde la lógica se disuelve</h1>
+      <p>Colección exclusiva de pintura surrealista contemporánea. Piezas únicas creadas desde el subconsciente.</p>
+      <a href="#obras" class="btn">Explorar colección</a>
+    </div>
+  </section>
+
+  <section id="obras" class="gallery">
+    <h2>Obras Destacadas</h2>
+    <div class="grid">
+      
+      <article class="card">
+        <div class="img-container">
+          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80" alt="El eco del reloj líquido">
+        </div>
+        <div class="card-info">
+          <h3>El eco del reloj líquido</h3>
+          <p class="specs">Óleo sobre lienzo · 120 × 90 cm · 2025</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-container">
+          <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=800&q=80" alt="Arquitectura del insomnio">
+        </div>
+        <div class="card-info">
+          <h3>Arquitectura del insomnio</h3>
+          <p class="specs">Acrílico y técnica mixta · 100 × 100 cm · 2026</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-container">
+          <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=800&q=80" alt="Memorias de sal y espejo">
+        </div>
+        <div class="card-info">
+          <h3>Memorias de sal y espejo</h3>
+          <p class="specs">Óleo sobre tabla · 80 × 110 cm · 2026</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="manifiesto" class="about">
+    <div class="about-box">
+      <h2>El Taller</h2>
+      <p>Cada cuadro es una ventana hacia lo irracional. No trabajamos con reproducciones ni series industriales; cada pieza exige meses de ejecución manual y posee certificado de autenticidad.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Consultas y Adquisiciones</h2>
+    <p>Para conocer disponibilidad, solicitar catálogo privado o agendar una visita al estudio, contáctanos directamente.</p>
+    
+    <div class="contact-methods">
+      <a href="mailto:estudio@oniria-arte.com?subject=Consulta%20de%20obra" class="btn">Enviar correo</a>
+      <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp directo</a>
+    </div>
+
+    <form action="mailto:estudio@oniria-arte.com" method="post" enctype="text/plain" class="contact-form">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+      <input type="text" name="obra" placeholder="Obra de interés (opcional)">
+      <textarea name="mensaje" rows="4" placeholder="Escribe tu consulta..." required></textarea>
+      <button type="submit" class="btn">Redactar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Oniria Estudio Surrealista. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
